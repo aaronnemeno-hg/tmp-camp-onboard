@@ -1,0 +1,12 @@
+.onboarding {
+  width: inherit;
+  background: #F5F6F8;
+}
+
+.onboarding .container {
+  padding-top: 4rem;
+}
+
+.onboarding .container .row .status-bar {
+  margin: 2rem 0;
+}

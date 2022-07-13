@@ -1,0 +1,109 @@
+.login {
+  width: inherit;
+  height: inherit;
+  background-image: url(../../assets/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__logo {
+  padding-top: 5rem;
+}
+
+.login__welcome {
+  margin-top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0px;
+  color: #FFF;
+  text-align: center;
+}
+
+.login__welcome span {
+  display: block; 
+}
+
+.login__card {
+  width: 40%; 
+  margin: 0 auto;
+  background-color: #FFF;
+  height: 456px;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.login__card-header {
+  padding-top: 2rem;
+}
+
+.login__card-header h4 {
+  color: #051C2C;
+  letter-spacing: 0px;
+  text-align: center; 
+  font-size: 24px;
+}
+
+.login__divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login__divider span {
+  font-size: 13px;
+  color: #B9B4A4;
+}
+
+.login__divider .login__left-line,
+.login__divider .login__right-line {
+    display: inline-block;
+    height: 1px;
+    width: 20%;
+    background-color: #B9B4A4;
+}
+
+.login__divider .login__left-line {
+  margin-right: 0.3rem;
+}
+
+.login__divider .login__right-line {
+  margin-left: 0.3rem;
+}
+
+.login__form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login__input-email,
+.login__input-password {
+  width: 230px;
+  height: 40px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login__input-email {
+  margin-right: 0.5rem;
+}
+
+.login__input-password {
+  margin-left: 0.5rem;
+}
+
+.login__input-submit {
+  color: #FFF;
+  background: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 104px;
+  height: 40px
+}

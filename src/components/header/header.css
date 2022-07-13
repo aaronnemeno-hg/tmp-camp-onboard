@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  background-color: #051C2C;
+}
+
+.header .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.2rem 0
+}
+
+.header__company-logo {
+  width: 30%;
+}
+
+.header .header__left {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__app-name {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__app-name p {
+  color: #FFF;
+}
+
+.header__app-name p .header__app-first-letter {
+  font-weight: 700;
+}
+
+.header__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__nav-list .header__nav-item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.header__nav-list .header__nav-item a {
+  text-decoration: none;
+  color: #FFF;
+}

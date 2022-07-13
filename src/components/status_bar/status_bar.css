@@ -1,0 +1,65 @@
+.status-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+  min-height: 58px;
+}
+
+.status-bar.success {
+  background: #E0F1C1;
+  border: 1px solid#E0F1C1;
+}
+
+.status-bar.success p.status-bar-message,
+.status-bar.error p.status-bar-message,
+.status-bar.info p.status-bar-message {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 14px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.status-bar.success p.status-bar-message,
+.status-bar.error p.status-bar-message,
+.status-bar.info p.status-bar-message {
+  text-transform: uppercase;
+}
+
+.status-bar.success p.status-bar-message {
+  color: #52891E;
+}
+
+.status-bar.success p.status-bar-message,
+.status-bar.error p.status-bar-message,
+.status-bar.info p.status-bar-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-bar.success p.status-bar-message svg,
+.status-bar.error p.status-bar-message svg {
+  margin-right: 0.6rem;
+}
+
+.status-bar.error {
+  background: #FEBBBB; border-radius: 1px solid #FEBBBB;
+}
+
+.status-bar.error p.status-bar-message {
+  color:#D60B1C;
+}
+
+.status-bar.info {
+  background: #DAEDF7;
+  border: 1px solid #DAEDF7;
+}
+
+.status-bar.info p.status-bar-message {
+  color: #35718E;
+}

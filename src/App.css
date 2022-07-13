@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 300;
+  src: url('./assets/fonts/Rubik-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  src: url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 500;
+  src: url('./assets/fonts/Rubik-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 600;
+  src: url('./assets/fonts/Rubik-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 700;
+  src: url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: url('./assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: url('./assets/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+#main-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/**
+* GENERAL STYLES FOR CAMP ONBOARD
+*
+*/
+
+.camp-title {
+  position: relative;
+  color: #131522;
+  letter-spacing: 0px;
+  font-size: 28px;
+  padding-left: 2rem;
+  font-family: 'Rubik';
+  font-weight: 500;
+}
+
+.camp-title::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 28px;
+  background: #131522;
+  position: absolute;
+  top: 12%;
+  left: 0;
+}
+
+.camp-action-label {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+}
+
+.camp-form-label {
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.camp-form-label .required {
+  color: #FF0000;
+}
+
+a.camp-btn-secondary,
+button.camp-btn-secondary,
+a.camp-btn-primary,
+button.camp-btn-primary {
+  margin-top: 2rem;
+}
+
+a.camp-btn-primary,
+button.camp-btn-primary {
+  font-family: 'Poppins';
+  font-weight: 500;
+  background: #051C2C;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+
+a.camp-btn-secondary,
+button.camp-btn-secondary {
+  font-family: 'Poppins';
+  font-weight: 500;
+  background: #FFF;
+  border-radius: 5px;
+  color: #051C2C;
+  border: 1px solid #051C2C;
+  cursor: pointer;
+}
+
+a.camp-btn-primary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+a.camp-btn-primary:active { 
+  text-decoration: none;
+  color: #FFF;
+}
+
+button.camp-btn-primary {
+  border: 1px solid#051C2C;
+}
+
+.camp-form-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.camp-form-group {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text].camp-input,
+input[type=password].camp-input {
+  border-radius: 5px;
+  border: 1px solid #B9B4A4;
+  color: #131522;
+  font-family: 'Poppins';
+  font-weight: 500;
+  padding: 0.89rem;
+}
+
+input[type=text].camp-input:active,
+input[type=text].camp-input:focus,
+input[type=password].camp-input:active,
+input[type=password].camp-input:focus {
+  outline: none;
+  border: 1px solid #B9B4A4;
+  border-radius: 5px;
+}
+
+input[type=text].camp-input::placeholder,
+input[type=password].camp-input::placeholder {
+  color: #B9B4A4;
+}
+
+input[type=text].camp-input::placeholder,
+input[type=password].camp-input::placeholder {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.camp-modal .modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+}
+
+.camp-modal .modal-header p {
+  text-align: center;
+}
+
+.camp-modal .modal-header h4 {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.camp-modal .modal-header svg {
+  margin-top: 2.8rem;
+}
+
+.camp-modal .modal-body p {
+  color: #828A8F;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.camp-modal .modal-body p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.camp-modal .modal-body p span {
+  display: block;
+}
+
+.camp-modal .modal-footer {
+  border-top: none;
+  margin-bottom: 2rem; 
+}
+
+.camp-modal .modal-footer button {
+  margin: 0 auto;
+  width: 237px;
+  height: 53px;
+  background: #051C2C;
+  border: 1px solid #051C2C;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.camp-modal .modal-header { 
+  padding: 0;
+}
+
+.camp-modal .modal-body {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

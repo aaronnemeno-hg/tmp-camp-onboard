@@ -1,0 +1,87 @@
+.onboarding__connect-with-ftp {
+
+}
+
+.onboarding__button {
+  width: 210px;
+  height: 54px;
+  font-size: 16px;
+  position: relative;
+}
+
+.onboarding__button svg {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.onboarding__fts-modal {
+
+}
+
+
+.onboarding__fts-modal .modal-header {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.onboarding__fts-modal .modal-header h4 {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 24px;
+
+  margin-left: 2rem;
+}
+
+.onboarding__fts-modal .modal-header h4::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 37px;
+  background: #000;
+  left: 0;
+  top: 34%;
+}
+
+.onboarding__fts-modal .onboarding__fts-row {
+  padding: 0.6rem 0;
+}
+
+.onboarding__fts-modal .onboarding__fts-group {
+  padding: 0 0.5rem;
+}
+
+.onboarding__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.onboarding__btn-save {
+  width: 108px;
+  height: 53px;
+}
+
+.onboarding__btn-cancel {
+  width: 108px;
+  height: 53px;
+}
+
+.onboarding__btn-test-connect {
+  width: 174px;
+  height: 55px;
+}
+
+.onboarding__btn-clear {
+  width: 154px;
+  height: 55px;
+}
+
+.onboarding__footer button {
+  margin: 0 0.5rem;
+}
