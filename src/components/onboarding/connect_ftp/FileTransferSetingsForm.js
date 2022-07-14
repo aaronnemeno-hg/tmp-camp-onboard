@@ -1,10 +1,20 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 
-const FileTransferSettingsForm = ({show, handleOnSave}) => {
+const FileTransferSettingsForm = ({
+  show, 
+  showFTPServerSettingsForm,
+  setShowFTPServerSettingsForm
+}) => {
+
+  const handleClose = () => {
+    setShowFTPServerSettingsForm(false);
+  }
+
   return (
     <>
-      <Modal className="onboarding__fts-modal" show={show} size={'xl'}>
+      <Modal className="onboarding__fts-modal" show={show} size={'xl'} 
+        onHide={handleClose}>
         <Modal.Header>
           <h4>File Transfer Settings</h4>
         </Modal.Header> 
@@ -27,11 +37,17 @@ const FileTransferSettingsForm = ({show, handleOnSave}) => {
                 <label className="camp-form-label">
                   FTP Host Site<span className="required">*</span>
                 </label>
-                <input 
-                  className="camp-input"
-                  type="text"
-                  placeholder="ftp-site.com"
-                />
+                <div className="camp-select-group">
+                  <select className="camp-select">
+                    <option>test</option>
+                  </select>
+                  <div className="camp-select-group-divider"></div>
+                  <input 
+                    className="camp-input"
+                    type="text"
+                    placeholder="ftp-site.com"
+                  />
+                </div>
               </div>
               <div className="onboarding__fts-group camp-form-group">
                 <label className="camp-form-label">
@@ -61,6 +77,9 @@ const FileTransferSettingsForm = ({show, handleOnSave}) => {
                 <label className="camp-form-label">
                   Transfer Mode<span className="required">*</span>
                 </label>
+                <select className="onboarding__select camp-select">
+                  <option>test</option>
+                </select>
               </div>
             </div>
           </div>
@@ -90,13 +109,14 @@ const FileTransferSettingsForm = ({show, handleOnSave}) => {
             <button
               className="onboarding__btn-save camp-btn-primary"
               type="button" 
-              onClick={handleOnSave}
+              onClick={()=>{}}
             >
               Save
             </button>
             <button
               className="onboarding__btn-cancel camp-btn-secondary"
               type="button"
+              onClick={handleClose}
             >
               Cancel
             </button>

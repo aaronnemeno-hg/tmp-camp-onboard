@@ -11,6 +11,7 @@ import axios from "axios";
 
 import Login from '../pages/login/Login';
 import Onboarding from "../pages/onboarding/Onboarding";
+import SegmentDashboard from "../pages/segment_dashboard/SegmentDashboard";
 
 
 // Authentication Object
@@ -42,8 +43,6 @@ const reducer = (state, action) => {
   }
 };
 
-
-
 function App() {
   const [state, dispatch] = React.useReducer(reducer, initialState);
   //const token = {}
@@ -59,6 +58,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Redirect to="/onboarding" />
+        </Route>
+        <Route path="/dashboard">
+          <SegmentDashboard /> 
         </Route>
         <Route path="/onboarding">
           <Onboarding />

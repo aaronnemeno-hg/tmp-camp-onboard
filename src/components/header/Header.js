@@ -2,17 +2,20 @@ import React from 'react';
 import './header.css';
 
 import ClientLogo from '../../assets/elc-logo.png';
+import {ReactComponent as OnboardingNavIcon} from '../../assets/onboarding-nav.svg';
+import {ReactComponent as DashboardNavIcon} from '../../assets/dashboard-nav.svg';
+import {ReactComponent as GearNavIcon} from '../../assets/gear.svg'
 
 const MenuItem = ({iconImage, name, isDropDown}) => {
   return (
     !isDropDown ? (
       <li className="header__nav-item">
-        <a href="#">{name}</a>
+        <a href="#">{iconImage} <span>{name}</span></a>
       </li>
     ) : (
       // dropdown loop
       <li className="header__nav-item dropdown">
-        <a href="#">{name}</a>
+        <a href="#">{iconImage} <span>{name}</span></a>
       </li>
     )
   );
@@ -37,9 +40,9 @@ const Header = () => {
         </div>
         <div className="header__right">
           <ul className="header__nav-list">
-            <MenuItem iconImage={null} name="Onboarding" isDropDown={false} />
-            <MenuItem iconImage={null} name="Dashboard" isDropDown={false} />
-            <MenuItem iconImage={null} name="Settings" isDropDown={true} />
+            <MenuItem iconImage={<OnboardingNavIcon />} name="Onboarding" isDropDown={false} />
+            <MenuItem iconImage={<DashboardNavIcon />} name="Dashboard" isDropDown={false} />
+            <MenuItem iconImage={<GearNavIcon />} name="Settings" isDropDown={true} />
           </ul>
         </div>
       </div>

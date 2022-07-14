@@ -1,0 +1,75 @@
+.onboarding__upload-container .onboarding__upload-dropzone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding__upload-container button {
+  display: block;
+  width: 108px;
+  height: 53px;
+
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.onboarding__upload-instructions {
+  font-family: 'Poppins'; 
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.onboarding__upload-instructions span:not(.linkify) {
+  color: #929599;
+}
+
+.onboarding__upload-instructions span.linkify {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.onboarding__reupload-container {
+  padding: 1rem;
+}
+
+.onboarding__reupload-container .onboarding__reupload-btn {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  color: #D60B1C;
+  background-color: #FEBBBB;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding__reupload-container .onboarding__reupload-btn span {
+  margin-left: 0.3rem;
+}
+
+.onboarding__delete-container {
+  padding: 1rem;
+}
+
+.onboarding__delete-container  .onboarding__delete-btn {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  background: #DAEDF7;
+  color: #35718E;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding__delete-container .onboarding__delete-btn span {
+  margin-left: 0.3rem;
+}

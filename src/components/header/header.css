@@ -28,6 +28,8 @@
 
 .header__app-name p {
   color: #FFF;
+  margin: 0;
+  padding: 0;
 }
 
 .header__app-name p .header__app-first-letter {
@@ -40,12 +42,18 @@
   justify-content: center;
 }
 
+.header__right .header__nav-list {
+  margin: 0;
+}
+
 .header__nav-list .header__nav-item {
   display: inline-block;
-  margin-right: 1rem;
+  margin: 0 0.5rem;
 }
 
 .header__nav-list .header__nav-item a {
   text-decoration: none;
   color: #FFF;
+  display: flex;
+  flex-direction: row;
 }

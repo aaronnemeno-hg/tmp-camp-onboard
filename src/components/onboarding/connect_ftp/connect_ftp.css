@@ -2,6 +2,10 @@
 
 }
 
+.onboarding__select {
+  height: 54px;
+}
+
 .onboarding__button {
   width: 210px;
   height: 54px;

@@ -1,0 +1,8 @@
+.segment {
+  width: inherit;
+  background: #F5F6F8;
+}
+  
+.segment .container {
+  padding-top: 4rem;
+}
