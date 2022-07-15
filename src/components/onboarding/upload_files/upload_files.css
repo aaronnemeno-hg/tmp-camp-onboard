@@ -32,6 +32,40 @@
   cursor: pointer;
 }
 
+
+.onboarding__uploading {
+}
+
+.onboarding__uploading-list {
+}
+
+.onboarding__uploading-item-detail p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.onboarding__uploading-item {
+  padding: 1rem 0;
+}
+
+.onboarding__uploading-item h3 {
+  text-align: center;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+
+.onboarding__uploading-item-detail p,
+.onboarding__uploading-item h4 {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  color: #929599;
+}
+
 .onboarding__reupload-container {
   padding: 1rem;
 }
@@ -72,4 +106,14 @@
 
 .onboarding__delete-container .onboarding__delete-btn span {
   margin-left: 0.3rem;
+}
+
+.onboarding__uploading-item-detail .progress {
+  height: 5px;
+  background-color: #DDE1E4;
+}
+
+.onboarding__uploading-item-detail .progress .progress-bar {
+  height: 5px;
+  background-color: #E9880C;
 }

@@ -6,6 +6,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 import StatusBar from '../../components/status_bar/StatusBar';
 // onboarding components
+import DragAndDropUploadBak from '../../components/onboarding/upload_files/DragAndDropUploadBak';
 import DragAndDropUpload from '../../components/onboarding/upload_files/DragAndDropUpload';
 import ConnectWithFTP from '../../components/onboarding/connect_ftp/ConnectWithFTP';
 import CreateSegment from '../../components/onboarding/new_segment/CreateSegment';
@@ -19,7 +20,7 @@ import './onboarding.css';
 const Onboarding = () => {
   const [fileUploadStatus, setFileUploadStatus] = useState("");
   const [fileUploadMessage, setFileUploadMessage] = useState("");
-  const [showFTPServerSettingsForm, setShowFTPServerSettingsForm] = useState(true);
+  const [showFTPServerSettingsForm, setShowFTPServerSettingsForm] = useState(false);
   const [showCreateSegmentModal, setShowCreateSegmentModal] = useState(false);
   const [showCreateSegmentStatus, setShowCreateSegmentStatus] = useState("");
   
@@ -39,6 +40,7 @@ const Onboarding = () => {
           </Row>
           <Row style={{paddingTop: '1.5rem'}}>
             <Col xs={12} md={6}>
+              {/* <DragAndDropUploadBak /> */}
               <DragAndDropUpload />
             </Col>
             <Col xs={12} md={6}>
@@ -75,7 +77,7 @@ const Onboarding = () => {
               })()
             }
           </Row>
-          <Row>
+          <Row style={{paddingTop: '1.5rem'}}>
             <Col xs={12}>
               <CreateSegment />
             </Col>

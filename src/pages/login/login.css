@@ -53,8 +53,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem 0;
 }
-
 
 .login__divider span {
   font-size: 13px;
@@ -77,33 +77,101 @@
   margin-left: 0.3rem;
 }
 
-.login__form-row {
+.login__form {
+
+}
+
+.login__form-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
-.login__input-email,
-.login__input-password {
-  width: 230px;
-  height: 40px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+
+.login__form-wrapper .form-group {
+  flex: 50%;
 }
 
-.login__input-email {
-  margin-right: 0.5rem;
+.login__form-wrapper .form-group:nth-child(1) {
+   padding-left: 2.5rem;
+   padding-right: 0.25rem;
 }
 
-.login__input-password {
-  margin-left: 0.5rem;
+.login__form-wrapper .form-group:nth-child(2) {
+   padding-left: 0.25rem;
+   padding-right: 2.5rem;
 }
 
-.login__input-submit {
-  color: #FFF;
-  background: #000;
+.login__form .form-group .form-label {
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #0C0A04;
+  text-transform: uppercase;
+}
+
+.login__form .form-group .input-group {
+  position: relative;
+}
+
+.login__form .form-group .input-group svg {
+  position: absolute;
+  z-index: 1;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login__form .form-group .input-group input[type=email],
+.login__form .form-group .input-group input[type=password] {
+  width: 100%;
+  height: 34px;
+}
+
+.login__form .form-group .input-group input[type=email] {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  color: #131522;
+}
+
+.login__form .form-group .input-group input[type=email]:active,
+.login__form .form-group .input-group input[type=email]:focus,
+.login__form .form-group .input-group input[type=password]:active,
+.login__form .form-group .input-group input[type=password]:focus {
+  outline: none;
+  border: 1px solid#B9B4A4;
   border-radius: 5px;
-  border: 1px solid #000;
-  width: 104px;
-  height: 40px
+}
+
+.login__form .form-group .input-group input[type=email]::placeholder,
+.login__form .form-group .input-group input[type=password]::placeholder {
+  font-family: 'Poppins';
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #B9B4A4;
+}
+
+.login__form-submit {
+  display: block;
+  margin: 0 auto;  
+  width: 124px;
+  height: 55px;
+  border-radius: 5px;
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+.login__need-help {
+  margin-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.login__need-help a:active,
+.login__need-help a:hover,
+.login__need-help a {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  color: #0C0A04;
+  text-decoration: underline;
 }

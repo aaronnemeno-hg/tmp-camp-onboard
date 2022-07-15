@@ -8,6 +8,9 @@ import './login.css';
 import { useLoginUserMutation } from "../../services/authentication";
 import LoginErrorModal from '../../components/login/LoginErrorModal';
 
+import {ReactComponent as LockIcon} from '../../assets/lock.svg';
+import {ReactComponent as MailIcon} from '../../assets/mail.svg';
+
 const Login = () => {
   //console.log(ClientLogo);
   const [loginUser, {data, isError, error}] = useLoginUserMutation();
@@ -73,40 +76,49 @@ const Login = () => {
                 <span>OR</span>
                 <div className="login__right-line"></div>
               </div>
-              <Form>
-                <Form.Group controlId="username">
-                  <Form.Label>Username</Form.Label>
-                  <InputGroup className="mb-3">
-                  <FormControl
-                    placeholder="Username"
-                    aria-label="Username"
-                    aria-describedby="username"
-                    name="username"
-                    type="text"
-                    onChange={(e) => setUsernameVal(e.target.value)}
-                  />                  
-                  </InputGroup>
-                </Form.Group>
-                <Form.Group controlId="password">
-                  <Form.Label>Password</Form.Label>
-                  <InputGroup className="mb-3">
+              <Form className="login__form">
+                <div className="login__form-wrapper">
+                  <Form.Group controlId="username">
+                    <Form.Label>Email</Form.Label>
+                    <InputGroup className="">
+                    <MailIcon />
                     <FormControl
-                      placeholder="*****"
-                      aria-label="Password"
-                      aria-describedby="password"
-                      name="password"
-                      onChange={(e) => setPasswordVal(e.target.value)}
-                    />
-                  </InputGroup>
-                </Form.Group>
-                <Button 
-                  variant="primary"
-                  className="w-100 mb-3"
-                  onClick={handleFormLogin}
-                >
-                  Login
-                </Button>
+                      placeholder="Registered Email"
+                      aria-label="Registered Email"
+                      aria-describedby="username"
+                      name="email"
+                      type="email"
+                      onChange={(e) => setUsernameVal(e.target.value)}
+                    />                  
+                    </InputGroup>
+                  </Form.Group>
+                  <Form.Group controlId="password">
+                    <Form.Label>Password</Form.Label>
+                    <InputGroup className="">
+                      <LockIcon />
+                      <FormControl
+                        placeholder="Your password"
+                        aria-label="Password"
+                        aria-describedby="password"
+                        name="password"
+                        type="password"
+                        onChange={(e) => setPasswordVal(e.target.value)}
+                      />
+                    </InputGroup>
+                  </Form.Group>
+                </div>
+                <div className="login__form-submit-container">
+                  <Button 
+                    className="login__form-submit camp-btn-primary"
+                    onClick={handleFormLogin}
+                  >
+                    Login
+                  </Button>
+                </div>
               </Form>
+              <div className="login__need-help">
+                <a href="#">Need Help?</a>
+              </div>
             </div>
           </div>
         </div>

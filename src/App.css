@@ -358,3 +358,28 @@ input[type=password].camp-input::placeholder {
   margin-bottom: 0;
   margin-left: 0.5rem;
 }
+
+.camp-tabs {
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #DDE1E4;
+  padding: 0 1rem;
+}
+
+.camp-tabs .nav-item {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  color: #131522;
+  text-transform: uppercase;
+  background: #F5F6F7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #DDE1E4;
+}
+
+
+.camp-tabs .nav-link.active { 
+  border-bottom: 5px solid #131522;
+  background: #F5F6F7;
+}
